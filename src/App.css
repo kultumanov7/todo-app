@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #151517;
+  width: 90%;
+  margin: auto;
+}
+
+.todo-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.todo-heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38px;
+  margin-top: 100px;
+}
+
+.todo-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.todo-buttons {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-btn {
+  font-weight: 700;
+  font-size: 14px;
+  width: 84px;
+  height: 40px;
+  background: linear-gradient(
+      0deg,
+      rgba(8, 30, 52, 0.05),
+      rgba(8, 30, 52, 0.05)
+    ),
+    #f0f0f0;
+  border-radius: 100px;
+  border: none;
+  margin-right: 16px;
+}
+
+.todo-btn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-btn-plus {
+  padding: 14px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(0deg, #081e34, #081e34), #f0f0f0;
+  border-radius: 100px;
+}
+
+.todo-btn-plus:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.todo-heading-of-lists {
+  margin-top: 64px;
+  padding: 24px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  display: flex;
+}
+
+.todo-page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1.4px solid #aeaeae;
+  border-radius: 4px;
+}
+
+.todo-task-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.three-points {
+  background-color: transparent;
+  border: none;
+}
+
+.three-points:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.img-three-points {
+  height: 10px;
+  width: 2.5px;
+  padding-top: 5px;
+}
+
+.footer {
+  margin: 288px 0 42px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.footer-credits {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #081e34;
+  opacity: 0.5;
+}
+
+.modal-side {
+  display: flex;
+  align-items: center;
+}
+
+.modal-window {
+  position: absolute;
+  top: 70px;
+  right: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  width: 268px;
+  height: 234px;
+  background: #e4e6e7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+
+.move-to-trash-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0px 12px 20px;
+  gap: 10px;
+  position: absolute;
+  width: 240px;
+  height: 22px;
+  top: 53px;
+  background: #E4E6E7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.move-to-trash-modal:hover {
+  cursor: pointer;
+}
+
+.trash-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.trash-modal-components {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  height: 30px;
+  column-gap: 10px;
+}
+
+
+.input-add-todo {
+  width: 230px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 8px;
+  resize: none;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.add-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  width: 76px;
+  height: 40px;
+  background: linear-gradient(0deg, #081e34, #081e34), #f0f0f0;
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: gray;
+}
